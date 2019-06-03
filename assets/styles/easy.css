@@ -1,0 +1,1019 @@
+/* Typography */
+
+body {
+    font-size: 16px;
+    line-height: 1.375em;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1.05em;
+}
+
+h2 {
+    font-size: 2.25em;
+    line-height: 1.25em;
+}
+
+h3 {
+    font-size: 1.75em;
+    line-height: 1.25em;
+}
+
+h4 {
+    font-size: 1.125em;
+    line-height: 1.22222222em;
+}
+
+blockquote {
+    font-size: 1.5em;
+    line-height: 1.45833333em;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.textleft {
+    text-align: left;
+}
+
+.textright {
+    text-align: right;
+}
+
+.textjustify {
+    text-align: justify;
+    text-align-last: left;
+}
+
+.textlastright {
+    text-align-last: right;
+}
+
+.textsmall {
+    font-size: 0.9rem;
+}
+
+.texttiny {
+    font-size: 0.85rem;
+}
+
+.textbig {
+    font-size: 1.2rem;
+}
+
+.textlarge {
+    font-size: 1.4rem;
+}
+
+.textbold {
+    font-weight: bold;
+}
+
+.textserif {
+    font-family: serif;
+}
+
+.textshadow1 {
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+
+/* Structure */
+
+body {
+    scroll-behavior: auto;
+    overflow: auto;
+}
+
+.posrel {
+    position: relative;
+}
+
+.posabs {
+    position: absolute;
+}
+
+.posfix {
+    position: fixed;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: initial !important;
+}
+
+.noappearance {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+.fullheight {
+    position: relative;
+    height: 100%;
+}
+
+.fullwidth {
+    position: relative;
+    width: 100%;
+}
+
+.limit {
+    max-width: 1280px !important;
+}
+
+.pad0 {
+    padding: 0px;
+}
+
+.pad15 {
+    padding: 15px;
+}
+
+.pad30 {
+    padding: 30px;
+}
+
+.padlr30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.padtb30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.padtb15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.padlr15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexcolumn {
+    flex-direction: column;
+}
+
+.flexcolumnreverse {
+    flex-direction: column-reverse
+}
+
+.flexrowreverse {
+    flex-direction: row-reverse;
+}
+
+.flexwrap {
+    flex-wrap: wrap;
+}
+
+.flexnowrap {
+    flex-wrap: nowrap;
+}
+
+.flexwrapreverse {
+    flex-wrap: wrap-reverse;
+}
+
+.flexgrow {
+    flex-grow: 1;
+}
+
+.flexnogrow {
+    flex-grow: 0;
+}
+
+.justifycenter {
+    display: flex;
+    justify-content: center;
+}
+
+.justifysa {
+    display: flex;
+    justify-content: space-around;
+}
+
+.justifysb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.justifyse {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.justifyfs {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.justifyfe {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.aligncenter {
+    display: flex;
+    align-items: center;
+}
+
+.alignsa {
+    display: flex;
+    align-items: space-around;
+}
+
+.alignsb {
+    display: flex;
+    align-items: space-between;
+}
+
+.alignfs {
+    display: flex;
+    align-items: flex-start;
+}
+
+.alignfe {
+    display: flex;
+    align-items: flex-end;
+}
+
+.coverbg {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fitbg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.cursorpointer {
+    cursor: pointer;
+}
+
+.cursordefault {
+    cursor: default;
+}
+
+/* Card */
+
+.easycard,
+.easycardh {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.easycardh:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* Progress Bar */
+
+.easyprogressbar {
+    position: relative;
+    width: 100%;
+    height: 15px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.easyprogressbar .easyprogress {
+    position: absolute;
+    width: 0%;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+}
+
+/* Buttons */
+
+a.buttonlink {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.easybutton {
+    position: relative;
+    border-radius: 3px;
+    padding: 8px 16px 10px 16px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.easybutton:hover {
+    opacity: 0.95;
+}
+
+.easybutton.large {
+    padding: 10px 20px 12px 20px;
+    font-size: 1.5rem;
+}
+
+.easybutton.big {
+    padding: 8px 20px 10px 20px;
+    font-size: 1.2rem;
+}
+
+.easybutton.small {
+    padding: 8px 16px 10px 16px;
+    font-size: 0.9rem;
+}
+
+.animbuttonone.ol {
+    transform-origin: left center;
+}
+
+.animbuttonone.or {
+    transform-origin: right center;
+}
+
+/* Components */
+
+.required::before {
+    content: '*';
+    color: red;
+    font-size: 0.85em;
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    font-weight: bold;
+}
+
+.easytoggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.easytoggle input+.track {
+    width: 42px;
+    height: 20px;
+}
+
+.easytoggle input+.track .thumb {
+    width: 9px;
+    height: 9px;
+}
+
+.easytoggle input+.track {
+    position: relative;
+    border: 2px solid #aaa;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.easytoggle input+.track .thumb {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border: 2px solid;
+    border-color: #aaa;
+    transition: all ease 0.3s;
+}
+
+.easytoggle input:checked+.track {
+    border-color: rgb(245, 227, 227);
+}
+
+.easytoggle input:checked+.track .thumb {
+    left: 26px;
+    border-color: #3fcae1;
+}
+
+.easycheckbox {
+    cursor: pointer;
+}
+
+.easycheckbox input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.easycheckbox input+svg path {
+    fill: #aaa !important;
+    transition: all ease 0.3s;
+}
+
+.easycheckbox input:checked+svg path {
+    fill: #3fcae1 !important;
+}
+
+.easyradio {
+    cursor: pointer;
+}
+
+.easyradio input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.easyradio input+.background {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    border: 2px solid #aaa;
+    transition: all ease 0.3s;
+}
+
+.easyradio input+.background .radio {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #aaa;
+    transform: scale(0);
+    transition: all ease 0.3s;
+}
+
+.easyradio input:checked+.background {
+    border-color: #3fcae1;
+}
+
+.easyradio input:checked+.background .radio {
+    transform: scale(1);
+    border-color: #3fcae1;
+}
+
+.easyinput {
+    position: relative;
+    margin-top: 15px;
+}
+
+.easyinput input {
+    position: relative;
+    outline: 0;
+    border: 2px solid #aaa;
+    padding: 2px 3px 6px 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.easyinput .placeholder {
+    position: absolute;
+    display: block;
+    background-color: white;
+    color: #aaa;
+    padding: 0px 3px;
+    top: 2px;
+    left: 5px;
+    transition: all 0.3s ease;
+    transform-origin: center left;
+    user-select: none;
+    /* supported by Chrome and Opera */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+}
+
+.easyinput input+.placeholder+.show {
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #aaa;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+}
+
+.easyinput input:focus+.placeholder+.show {
+    color: #3fcae1;
+}
+
+.easyinput input:focus {
+    border-color: #3fcae1;
+}
+
+.easyinput input:focus+.placeholder {
+    color: #3fcae1;
+}
+
+.easyinput input+.placeholder {
+    transform: scale(0.8) translateY(-22px);
+}
+
+.easyinput input[value=""]+.placeholder {
+    transform: scale(1) translateY(0px);
+}
+
+.easyinput input:focus+.placeholder {
+    transform: scale(0.8) translateY(-22px);
+}
+
+.easyinput input[value=""]:focus+.placeholder {
+    transform: scale(0.8) translateY(-22px);
+}
+
+.easytextarea {
+    position: relative;
+    margin-top: 15px;
+}
+
+.easytextarea textarea {
+    position: relative;
+    outline: 0;
+    border: 2px solid #aaa;
+    padding: 2px 3px 6px 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    resize: none;
+}
+
+.easytextarea .placeholder {
+    position: absolute;
+    display: block;
+    background-color: white;
+    color: #aaa;
+    padding: 0px 3px;
+    top: 2px;
+    left: 5px;
+    transition: all 0.3s ease;
+    transform-origin: center left;
+}
+
+.easytextarea textarea:focus {
+    border-color: #3fcae1;
+}
+
+.easytextarea textarea:focus+.placeholder {
+    color: #3fcae1;
+}
+
+.easytextarea textarea+.placeholder {
+    transform: scale(0.8) translateY(-22px);
+}
+
+.easytextarea textarea[value=""]+.placeholder {
+    transform: scale(1) translateY(0px);
+}
+
+.easytextarea textarea:focus+.placeholder {
+    transform: scale(0.8) translateY(-22px);
+}
+
+.easytextarea textarea[value=""]:focus+.placeholder {
+    transform: scale(0.8) translateY(-22px);
+}
+
+.easydropdown {
+    position: relative;
+}
+
+.easydropdown .select {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.easydropdown .options {
+    position: absolute;
+    display: none;
+    left: 0px;
+    border-radius: 0px 0px 5px 5px;
+    z-index: 100;
+    min-width: 100%;
+    margin: 0px;
+    background-color: white;
+}
+
+.easydropdown .options option {
+    cursor: pointer;
+    padding: 8px 15px;
+    border-left: 2px solid transparent;
+    transition: border-left 0.3s ease;
+}
+
+/* Animations - anime.js */
+
+#click-holder #click-circle {
+    border-radius: 5000px;
+}
+
+/* Border Shapes */
+
+.round {
+    border-radius: 2000px;
+}
+
+.curved {
+    border-radius: 5px;
+}
+
+.flat {
+    border-radius: 0px;
+}
+
+/* Colors */
+
+.textcolorone {
+    color: #3fcae1;
+}
+
+.textcolortwo {
+    color: darkcyan;
+}
+
+.colorone {
+    background-color: #3fcae1;
+    color: #fff;
+}
+
+.colortwo {
+    background-color: darkcyan;
+    color: #fff;
+}
+
+.colordark {
+    background-color: #222;
+    color: #fff;
+}
+
+.colorblack {
+    background-color: black;
+    color: #fff;
+}
+
+.colorwhite {
+    background-color: white;
+    color: #222;
+}
+
+.colorlight {
+    background-color: #efefef;
+    color: #000;
+}
+
+.colorgray {
+    background-color: #888;
+    color: #000;
+}
+
+.colorlightgray {
+    background-color: #ccc;
+    color: #000;
+}
+
+.colorsuccess {
+    background-color: #00C851;
+    color: white;
+}
+
+.colorerror {
+    background-color: #FF4444;
+    color: white;
+}
+
+.textwhite {
+    color: white;
+}
+
+.textdark {
+    color: #222;
+}
+
+.textblack {
+    color: black;
+}
+
+.textgray {
+    color: #444;
+}
+
+.textsuccess {
+    color: #007E33;
+}
+
+.texterror {
+    color: #c00;
+}
+
+.bgblack {
+    background-color: #000;
+}
+
+.bgwhite {
+    background-color: #fff;
+}
+
+.bgdark {
+    background-color: #444;
+}
+
+.bglight {
+    background-color: #fafafa;
+}
+
+.shadow1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.shadow1:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.shadow2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.shadow3 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.shadow4 {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.shadow5 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+/* Snippets */
+
+.darkoverlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1500;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.popupmodal {
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 15px;
+    position: relative;
+}
+
+.popupmodal .closebtn {
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    cursor: pointer;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    /* Styles */
+    body {
+        font-size: 1em;
+        line-height: 1.25em;
+    }
+
+    h1 {
+        font-size: 2em;
+        line-height: 1.25em;
+    }
+
+    h2 {
+        font-size: 1.625em;
+        line-height: 1.15384615em;
+    }
+
+    h3 {
+        font-size: 1.375em;
+        line-height: 1.13636364em;
+    }
+
+    h4 {
+        font-size: 1.125em;
+        line-height: 1.11111111em;
+    }
+
+    blockquote {
+        font-size: 1.25em;
+        line-height: 1.25em;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-width: 321px) {
+    /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width: 320px) {
+    /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Styles */
+}
+
+/**********
+
+    iPad 3
+
+    **********/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1224px) {
+    /* Styles */
+}
+
+/* Large screens ----------- */
+
+@media only screen and (min-width: 1824px) {
+    /* Styles */
+}
+
+/* iPhone 4 ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+/* iPhone 5 ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+/* iPhone 6, 7, 8 ----------- */
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+/* iPhone 6+, 7+, 8+ ----------- */
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+/* iPhone X ----------- */
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+/* iPhone XS Max, XR ----------- */
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+@media print {
+    body {
+        font-size: 12pt;
+        line-height: 1.25em;
+    }
+
+    h1 {
+        font-size: 36pt;
+        line-height: 1.25em;
+    }
+
+    h2 {
+        font-size: 24pt;
+        line-height: 1.25em;
+    }
+
+    h3 {
+        font-size: 18pt;
+        line-height: 1.25em;
+    }
+
+    h4 {
+        font-size: 14pt;
+        line-height: 1.25em;
+    }
+
+    blockquote {
+        font-size: 24pt;
+        line-height: 1.45833333em;
+    }
+}
