@@ -409,7 +409,7 @@ a.buttonlink {
 
 .easytoggle input:checked+.track .thumb {
     left: 26px;
-    border-color: #3fcae1;
+    border-color: #c00;
 }
 
 .easycheckbox {
@@ -429,7 +429,7 @@ a.buttonlink {
 }
 
 .easycheckbox input:checked+svg path {
-    fill: #3fcae1 !important;
+    fill: #c00 !important;
 }
 
 .easyradio {
@@ -462,12 +462,12 @@ a.buttonlink {
 }
 
 .easyradio input:checked+.background {
-    border-color: #3fcae1;
+    border-color: #c00;
 }
 
 .easyradio input:checked+.background .radio {
     transform: scale(1);
-    border-color: #3fcae1;
+    border-color: #c00;
 }
 
 .easyinput {
@@ -517,15 +517,15 @@ a.buttonlink {
 }
 
 .easyinput input:focus+.placeholder+.show {
-    color: #3fcae1;
+    color: #c00;
 }
 
 .easyinput input:focus {
-    border-color: #3fcae1;
+    border-color: #c00;
 }
 
 .easyinput input:focus+.placeholder {
-    color: #3fcae1;
+    color: #c00;
 }
 
 .easyinput input+.placeholder {
@@ -572,11 +572,11 @@ a.buttonlink {
 }
 
 .easytextarea textarea:focus {
-    border-color: #3fcae1;
+    border-color: #c00;
 }
 
 .easytextarea textarea:focus+.placeholder {
-    color: #3fcae1;
+    color: #c00;
 }
 
 .easytextarea textarea+.placeholder {
@@ -648,7 +648,7 @@ a.buttonlink {
 /* Colors */
 
 .textcolorone {
-    color: #3fcae1;
+    color: #c00;
 }
 
 .textcolortwo {
@@ -656,7 +656,7 @@ a.buttonlink {
 }
 
 .colorone {
-    background-color: #3fcae1;
+    background-color: #c00;
     color: #fff;
 }
 
