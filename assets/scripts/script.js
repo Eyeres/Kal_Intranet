@@ -11,9 +11,9 @@ function initChart() {
             img_0: "pic"
         },
         nodes: [
-            { id: 1, name: "Kalyan Vempaty", designation: "CEO", pic: "http://insidekal.com/wpapi/wp-content/themes/inside/images/kalyanv.jpg" },
-            { id: 2, name: "Vamsi Krishna Gadi", designation: "BDM", pic: "http://insidekal.com/wpapi/wp-content/themes/inside/images/vamsig.jpg" },
-            { id: 3, pid: 1, spids: [2], name: "Srinivas Rao Kapparati", designation: "IT", pic: "http://insidekal.com/wpapi/wp-content/themes/inside/images/srinik.jpg" }
+            { id: 1, name: "Kalyan Vempaty", designation: "CEO", pic: "https://insidekal.com/wpapi/wp-content/themes/inside/images/kalyanv.jpg" },
+            { id: 2, name: "Vamsi Krishna Gadi", designation: "BDM", pic: "https://insidekal.com/wpapi/wp-content/themes/inside/images/vamsig.jpg" },
+            { id: 3, pid: 1, spids: [2], name: "Srinivas Rao Kapparati", designation: "IT", pic: "https://insidekal.com/wpapi/wp-content/themes/inside/images/srinik.jpg" }
         ]
     });
 }
